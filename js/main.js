@@ -1,6 +1,17 @@
-let chilometri = prompt("Quanti chilometri vuoi percorrere?") 
-let età = prompt("Quanti anni hai?")
+let chilometri = Number(prompt("Quanti chilometri vuoi percorrere?")) 
 
-const prezzoKm = "0.21 €"
+if (chilometri == null || chilometri == ""){
+    alert("Non hai inserito i chilometri");
+} else if (chilometri == Number){
+    alert("Il prezzo del biglietto è" (prezzoBiglietto))
+}
+ 
+
+
+
+let età = Number(prompt("Quanti anni hai?")) 
+
+const prezzoKm = "0.21" 
+
 
 let prezzoBiglietto = prezzoKm * chilometri
