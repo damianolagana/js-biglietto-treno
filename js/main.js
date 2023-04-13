@@ -13,12 +13,14 @@ if (chilometri == null || chilometri == ""){
 
 
 let età = Number(prompt("Quanti anni hai?")) 
+let scontoMinori = prezzoBiglietto * 0.2
+let scontoOver65 = prezzoBiglietto * 0.4
 
 if (età < 18 ){
-    prezzoBiglietto = (prezzoKm * chilometri) * 0.2;
+    prezzoBiglietto = prezzoBiglietto - scontoMinori;
     alert("Il prezzo del biglietto è " + prezzoBiglietto + "€");
 } else if (età > 65){
-    prezzoBiglietto = (prezzoKm * chilometri) * 0.4;
+    prezzoBiglietto = prezzoBiglietto - scontoOver65;
     alert("Il prezzo del biglietto è " + prezzoBiglietto + "€");
 
 } else {
